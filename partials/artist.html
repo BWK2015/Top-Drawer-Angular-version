@@ -1,0 +1,15 @@
+<h1>Artist</h1>
+
+<h3>{{artistCtrl.artistName | uppercase}}</h3>
+<h4>{{artistCtrl.artistBio}}</h4>
+<div class="photos-container">    
+    <artist-individual ng-repeat="image in artistCtrl.images">
+        <img ng-src="{{image}}" ng-click="artistCtrl.lightBox(image)">
+    </artist-individual>
+</div>
+<div id="overlay" ng-show="artistCtrl.showLightBox">
+    <img ng-src="{{artistCtrl.lightBoxImage}}" ng-click="artistCtrl.closeLightBox()" id="LBImage">
+    <div id="leftButton" ng-click="artistCtrl.leftPicture(artistCtrl.lightBoxImage)"></div>
+    <div id="rightButton" ng-click="artistCtrl.rightPicture(artistCtrl.lightBoxImage)"></div>
+</div>
+<div id="footer">FOOTER</div>

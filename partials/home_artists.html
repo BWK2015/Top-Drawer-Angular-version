@@ -1,0 +1,10 @@
+<h1>HOME</h1>
+<h3>Artists</h3>
+<ul id="homeArtists">
+        <artist-home ng-repeat="item in homeCtrl.homeArtistsArray" artist-data="item">
+            <a ng-href="#/artist/{{item.urlId}}" class="artistHomeAnchor">
+                <h3>{{item.name}}</h3>
+            </a>
+        </artist-home>
+</ul>
+<div id="footer">FOOTER</div>

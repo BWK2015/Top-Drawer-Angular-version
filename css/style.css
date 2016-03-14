@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body, #main-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/*iPhone 6 and less*/
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+    launch-rotate {
+        display: none;  
+    } 
+      
+    #logo-display {
+        display: block;
+        height: 50vw;
+        width: 50vw;
+        margin: 0 auto;
+        top: 50vw;
+        background-color: white;
+        position: relative;
+    }
+    #logo-display > a {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            text-decoration: none;
+    }
+  }
+
+@media only screen and (max-width: 480px) and (orientation: landscape) {
+    launch-rotate {
+        display: none;  
+    } 
+      
+    #logo-display {
+        display: block;
+        height: 50vh;
+        width: 50vh;
+        margin: 0 auto;
+        top: 25vh;
+        background-color: white;
+        position: relative;
+    }
+    #logo-display > a {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            text-decoration: none;
+    }
+  }
+
+@media only screen and (min-width: 415px) and (max-width: 700px) and (orientation: portrait) {
+    launch-rotate {
+        display: none;  
+    } 
+      
+    #logo-display {
+        display: block;
+        height: 50vw;
+        width: 50vw;
+        margin: 0 auto;
+        top: 25vh;
+        background-color: white;
+        position: relative;
+    }
+    #logo-display > a {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            text-decoration: none;
+    }   
+}
+
+@media only screen and (min-width: 481px) and (max-width: 700px) and (orientation: landscape)){
+    launch-rotate {
+        display: none;  
+    } 
+      
+    #logo-display {
+        display: block;
+        height: 50vh;
+        width: 50vh;
+        margin: 0 auto;
+        top: 25vh;
+        background-color: white;
+        position: relative;
+    }
+    #logo-display > a {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            text-decoration: none;
+    }
+}
+
+@media only screen and (min-width: 701px) and (orientation: portrait){
+    /*launch Page*/
+    #logo-display {
+        display: none;
+    }
+    launch-rotate{
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+    #launchContainer {
+        position: absolute;
+        display: flex;
+        height: 20%;
+        background-color: rgba(255,255,255,0.7);
+        width: 50%;
+        flex-flow: row;
+        top: 40%;
+        justify-content: flex-end;
+    }
+    #launchContainer > div {
+        display: block;
+        width: 50%;
+        height: 100%;
+        position: relative;
+    }
+    #launchContainer > div > a {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-decoration: none;
+    }
+    #launchContainer > div > a > svg {
+        width: 100%;
+        height: 100%;
+    }
+    
+    /*Home Page*/
+    
+    nav {
+        width: 100%;
+        display: flex;
+        height: 150px;
+        background-color: deeppink;
+    }
+    .navBar {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        list-style: none;
+        width: 100%;
+        height: 100%;
+    }
+    .navBar > li {
+        position: relative;
+        display: inline-block;
+        width: 20%;
+        height: 40%;
+        border: 2px solid black;
+        align-self: flex-end;
+    }
+    .navBar > li:nth-child(1) {
+        align-self: center;
+        margin-right: auto;
+        margin-left: 10%;
+    }
+    .navBar > li > a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: black
+    }
+    
+    svg {
+        display: block;
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media only screen and (min-width: 701px) and (orientation: landscape){
+    /*Launch Page*/
+    #logo-display {
+        display: none   
+    }
+    launch-rotate {
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        transition: 0.7s linear all;
+    }
+    #launchContainer {
+        position: absolute;
+        display: flex;
+        height: auto;
+        background-color: rgba(255,255,255,0.7);
+        width: 25%;;
+        flex-flow: row wrap;
+        top: 35%;
+        justify-content: flex-end;
+    }
+    #launchContainer > div {
+        display: block;
+        width: 50%;
+        height: 100%;
+        position: relative;
+    }
+    #launchContainer > div > a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-decoration: none;
+    }
+    #launchContainer > div > a > svg {
+        width: 100%;
+        height: 100%;
+    }
+    
+    /*Home Page*/
+    
+    nav {
+        width: 100%;
+        display: flex;
+        height: 150px;
+        background-color: deeppink;
+    }
+    .navBar {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        list-style: none;
+        width: 100%;
+        height: 100%;
+    }
+    .navBar > li {
+        position: relative;
+        display: inline-block;
+        width: 20%;
+        height: 40%;
+        align-self: center;
+    }
+    .navBar > li:nth-child(1) {
+        align-self: center;
+        margin-right: auto;
+        margin-left: 10%;
+    }
+    .navBar > li > a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: black
+    }
+    .navBar > li > a:hover {
+        background-color: white;
+    }
+    .navBar > a {
+        display: block;
+        height: auto;
+        width: 20%;
+    }
+    .navBar > a > svg  {
+        display: block;
+        height: auto;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
